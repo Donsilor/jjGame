@@ -1,0 +1,240 @@
+.pop_up{
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	box-sizing: border-box;
+	background-color: rgba(0,0,0,.7);
+	display: none;
+	z-index: 666;
+}
+.trial,
+.quit{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	width: 75%;
+	max-width: 640px;
+	height: ;
+	text-align: center;
+	border-radius: 5px;
+	background-color: #fff;
+	color: #f00;
+	box-shadow: 0 0 8px rgba(0,0,0,.1);
+	display: none;
+}
+.quit{
+	color: inherit;
+}				
+.trial_title,
+.qu_title{
+	padding: 30px;
+	font-size: 1.5rem;
+	line-height: 1.8;
+}
+.trial_btn,
+.qu_btn{
+	width: 100%;
+	height: 50px;
+	line-height: 50px;
+	font-size: 0;
+	background-color: #f2f2f2;
+	border-top: 1px solid #D0D0D0;
+	border-radius: 0 0 5px 5px;
+}
+.trial_btn span,
+.qu_btn span{
+	display: inline-block;
+	width: 50%;
+	height: 100%;
+	font-size: 14px;
+	cursor: pointer;
+	text-align: center;
+	box-sizing: border-box;
+}
+.trial_btn span:last-child,
+.qu_btn span:last-child{
+	border-left: 1px solid #D0D0D0;
+	color: #40AFFE;
+}
+
+.top_up,.service,.finance{
+	position: absolute;
+	bottom: 0;
+	left: 1%;
+	width: 98%;
+	max-height: 100%;
+	min-height: 40%;
+	border-radius: 10px 10px 0 0;
+	font-size: 14px;
+	padding-bottom: 20px;
+	overflow: hidden;
+	background-color: #fff;
+	display: none;
+	/*animation: anim 2s ease 3s;*/
+}
+@keyframes anim{
+	from{height:0;}
+	to{height:auto;}
+}
+@-webkit-keyframes anim{
+	from{height:0 !important;}
+	to{height:auto;}
+}
+.top_up i,
+.finance i,
+.service i{
+	font-size: 2rem;
+}
+.top_up i.close_layer,
+.finance i.close_layer,
+.service i.close_layer{
+	float: right;
+	width: 4rem;
+	text-align: center;
+	color: #502969;
+	font-size: 3rem;
+	cursor: pointer;
+	height: 4.4rem;
+}
+.top_up h4.game_tit,
+.finance h4.game_tit,
+.service h4.game_tit{
+	border-radius: 10px 10px 0 0;
+	border-bottom: 1px solid #eee;
+	background-color: #fefefe;
+	line-height: 4.4rem;
+	padding: 0 2.5%;
+	color: #333;
+	font-size: 1.6rem;
+}
+.info_score{
+	overflow: hidden;
+	background-color: #fff;
+	padding: 1rem;
+	border-bottom: 1px solid #eee;
+}
+.info_score .pic{
+	width: 6rem;
+	height: 6rem;
+	float: left;
+	border-radius: 50%;
+	overflow: hidden;
+}
+.info_score .pic img{
+	width: 6rem;
+	width: 6rem;
+}
+.top_up .view{
+	padding-left: 1rem;
+	overflow: hidden;
+	color: #502969;
+	font-size: 1.4rem;
+}
+.top_up .view h4{
+	margin-bottom: 0.33em;
+}
+.top_up .view a.log{
+	display: block;
+	width: 8rem;
+	margin-top: 1rem;
+	text-align: center;
+	line-height: 3rem;
+	border: 1px solid #502969;
+	border-radius: 3px;
+	font-size: 1.4rem;
+	float: right;
+	color: #502969;
+}
+.top_up dl{
+	margin: 3rem 1rem;
+	overflow: hidden;
+}
+.top_up dt{
+	text-align: center;
+}
+.top_up dt a{
+	width: 40%;
+	margin: 0 4%;
+	font-size: 1.6rem;
+	display: inline-block;
+	line-height: 4rem;
+	border: 1px solid #ddd;
+	border-radius: 5px;
+	color: #333;
+}
+.top_up dt a.on{
+	background-color: #502969;
+	color: #fff;
+}
+.top_up dd{
+	padding: 2rem 4% 0;
+}
+.top_up dd input{
+	width: 100%;
+	line-height: 3rem;
+	border: 1px solid #ddd;
+	padding: 5px 10px;
+	font-size: 1.6rem;
+	color: #502969;
+	border-radius: 3px;
+	box-sizing: border-box;
+}
+.top_up dd input::-webkit-input-placeholder{
+	color: #502969;
+}
+.top_up .sub_btn{
+	padding: 0 1rem;
+}
+.top_up .sub_btn a.submit{
+	display: block;
+	line-height: 4.4rem;
+	font-size: 1.6rem;
+	background-color: #502969;
+	color: #fff;
+	text-align: center;
+	border-radius: 5px;
+	letter-spacing: .5rem;
+}
+.top_up p.remind{
+	padding: 10px;
+	margin-top: 5px;
+	color: #999;
+}
+.service,
+.finance{
+	font-size: 1.6rem;
+	padding: 0;
+}
+.service .game_tit,
+.finance .game_tit{
+	margin-bottom: 1rem;
+}
+
+.service p,
+.finance p{
+	text-align: center;
+}
+.service .pic,
+.finance .pic{
+	width: 40%;
+	margin: .5rem auto;
+}
+.service .pic img,
+.finance .pic img{
+	width: 100%;
+}
+.service .txt,
+.finance .txt{
+	width: 96%;
+	margin: .5rem auto;
+}
+.service .txt p,
+.finance .txt p{
+	line-height: 1.5;
+	font-size: 1.2rem;
+	color: #999;
+	text-align: left;					
+}

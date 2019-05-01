@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<meta content="yes" name="apple-mobile-web-app-capable" />
+		<meta content="black" name="apple-mobile-web-app-status-bar-style" />
+		<meta content="telephone=no" name="format-detection" />
+		<link rel="stylesheet" type="text/css" href="../static/css/weui.min.css" />
+		<link rel="stylesheet" type="text/css" href="../static/css/iconfont.css" />
+		<link rel="stylesheet" type="text/css" href="../static/css/common.css"/>
+		<link rel="stylesheet" type="text/css" href="../static/css/style.css" />
+		<link rel="stylesheet" type="text/css" href="../static/css/emoji.css" />
+		<link rel="stylesheet" type="text/css" href="../static/css/user.css" />
+		<script src="../static/js/jquery.min.js" type="text/javascript"></script>
+		<title>个人中心</title>
+		<style type="text/css">
+		</style>
+	</head>
+	<body class="graybg">
+		<div>
+			<section class="main">
+				<div class="mem-info">
+					<div class="pic">
+						<p class="img fl"><img src="../static/images/head.jpg" /></p>
+						<p class="text fl">
+							jj2018001<br/>
+							<font style="font-size: 1.2rem;">帐号:</font>
+							<font style="font-family:arial;">
+								jj2018001 </font><br>
+							<font style="font-size: 1.2rem;">&nbsp;UID:</font>
+							<font style="font-family:arial;"> 11429</font>
+						</p>
+					</div>
+					<div class="total">
+						<dl>
+							<dt>0</dt>
+							<dd>余点</dd>
+						</dl>
+						<dl>
+							<dt>0</dt>
+							<dd>今日</dd>
+						</dl>
+						<dl>
+							<dt>0</dt>
+							<dd>昨日</dd>
+						</dl>
+					</div>
+				</div>
+				<div class="mem-list" style="padding-bottom: 7.5rem;">
+					<ul>
+						<li>
+							<a href="javascript:;" class="">
+								<i class="iconfont">&#xe7e6;</i> 上分下分
+							</a>
+						</li>
+						<li>
+							<a href="charge.html" class="">
+								<i class="iconfont">&#xe88c;</i> 上分记录
+							</a>
+						</li>
+						<li>
+							<a href="tixian.html" class="">
+								<i class="iconfont">&#xe6e1;</i> 下分记录
+							</a>
+						</li>
+						<li>
+							<a href="logs.html" class=""><i class="iconfont">&#xe75a;</i> 竞猜记录</a>
+						</li>
+						<li>
+							<a href="finance.html" class="">
+								<i class="iconfont">&#xe625;</i> 我的钱包
+							</a>
+						</li>
+						<li>
+							<a href="account.html" class="">
+								<i class="iconfont">&#xe64b;</i> 登陆帐户
+							</a>
+						</li>
+						<li>
+							<a href="javascript:void" class="ajax_load" data-uri="/index/help/data/caiwu.html">
+								<i class="iconfont">&#xe6b3;</i> 财务客服
+							</a>
+						</li>
+						<li id="debug" style="display: none;">
+							<a href="debug.html" class="show_load">
+								<i class="iconfont">&#xe72d;</i> TBS调试
+							</a>
+						</li>
+						<li>
+							<a href="ubmb.html" class="show_load">
+								<i class="iconfont">&#xe6a7;</i> 下载APP
+							</a>
+						</li>
+						<li>
+							<a href="javascript:void(0)" class="logout">
+								<i class="iconfont">&#xe92f;</i> 退出系统
+							</a>
+						</li>
+					</ul>
+				</div>
+			</section>
+		</div>
+		<footer>
+			<ul>
+				<li class="">
+					<a href="javascript:;" class="about ajax_sw" data-sw="0">
+						<i class="iconfont">&#xe665;</i> 
+						<span>试玩</span>
+					</a>
+				</li>
+				<li>
+					<a href="javascript:;" data-css="bottom:0;" class="ajax_load" data-uri="/index/help/data/charge.html">
+						<i class="iconfont">&#xe7e6;</i> 上下分
+					</a>
+				</li>
+				<li class="home ">
+					<a href="lobby.html">
+						<i class="iconfont">&#xe86a;</i> 大厅
+					</a>
+				</li>
+				<li class="on">
+					<a href="member.html">
+						<i class="iconfont">&#xe62e;</i> 个人中心
+					</a>
+				</li>
+				<li>
+					<a href="javascript:;" data-css="bottom:0;" class="kefu ajax_load" data-uri="/index/help/data/kefu.html">
+						<i class="iconfont">&#xe905;</i> 客服
+					</a>
+				</li>
+			</ul>
+		</footer>
+		
+		<div class="pop_up">   
+			<div class="trial">  
+				<div class="trial_title">
+					试玩模式不做任何记录！
+					<br /><br />
+					是否确认进入试玩模式？
+				</div>
+				<div class="trial_btn">
+					<span class="cancle">取消</span>
+					<span class="affirm">确认</span>
+				</div>
+			</div>
+			
+			<div class="top_up top_u">
+				<h4 class="game_tit">
+					<i class="iconfont"></i>
+					<b>上分、下分</b>
+					<i class="iconfont close_layer close1"></i>
+				</h4>
+				<div class="info_score">
+					<div class="pic">
+						<img src="../static/images/head.jpg"/>
+					</div>
+					<div class="view">
+						<a href="finance.html" class="log">上下分记录</a>
+						<h4>jj2018001</h4>
+						<p>当前余点：0.00</p>
+					</div>
+				</div>
+				<dl>
+					<dt class="ftype">
+						<a href="javascript:;" class="on">上分</a>
+						<a href="javascript:;">下分</a>
+					</dt>
+					<dd>
+						<input type="number" name="money" step="0.01" placeholder="请输入上下分值"/>
+					</dd>
+				</dl>
+				<div class="sub_btn">
+					<a href="javascript:;" class="submit">确定操作</a>
+				</div>
+				<p class="remind">请添加客服转账后，发起上下分申请！</p>
+			</div>
+			
+			<div class="service top_u">
+				<h4 class="game_tit">
+					<i class="iconfont"></i>
+					<b>联系客服</b>
+					<i class="iconfont close_layer close2"></i>
+				</h4>
+				<p>
+					客服微信号：
+					<em></em>
+				</p>
+				<div class="pic">
+					<img src="../static/images/recreaction.jpg"/>
+				</div>
+				<div class="txt">
+					<p>1.可长按“二维码”点击“识别图中二维码”或保存二维码图片。</p>
+					<p>2.请在微信中打开“扫一扫”。</p>
+					<p>3.在“扫一扫”点右上角，选择“从相册中选择取二维码”选取保存的图片</p>
+				</div>
+			</div>
+			
+			<div class="finance top_u">
+				<h4 class="game_tit">
+					<i class="iconfont"></i>
+					<b>财务客服</b>
+					<i class="iconfont close_layer close3"></i>
+				</h4>
+				<p>
+					账务微信号:
+					<em></em>
+				</p>
+				<div class="pic">
+					<img src="../static/images/code.png"/>
+				</div>
+				<div class="txt">
+					<p>1.可长按“二维码”点击“识别图中二维码”或保存二维码图片。</p>
+					<p>2.请在支付宝/微信中打开“扫一扫”。</p>
+					<p>3.在“扫一扫”点右上角，选择“从相册中选择取二维码”选取保存的图片。</p>
+					<p>4.如上下分未及时到账，请您联系客服反馈。</p>
+				</div>
+			</div>
+			
+			<div class="quit">
+				<div class="qu_title">
+					确定要退出吗？
+				</div>
+				<div class="qu_btn">
+					<span class="cancle">关闭</span>
+					<span class="affirm">确定</span>
+				</div>
+			</div>
+		</div>
+		
+		<script src="../static/js/common.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			$(function(){
+				$('.mem-list ul li:first').click(function(){
+					$('.pop_up').css('display','block');
+					$('.top_up').css('display','block');
+					$('.top_u').addClass('topp2');
+				})
+				$('.mem-list ul li:nth-child(5)').click(function(){
+					sessionStorage.setItem('type','0');
+				})
+				$('.mem-list ul li:nth-child(7)').click(function(){
+					$('.pop_up').css('display','block');
+					$('.finance').css('display','block');
+					$('.top_u').addClass('topp2');
+				})
+				$('i.close3').click(function(){
+					$('.pop_up').css('display','none');
+					$('.finance').css('display','none');
+				})
+				$('.mem-list ul li:last').click(function(){
+					$('.pop_up').css('display','block');
+					$('.quit').css('display','block');
+					return false;
+				})
+				$('.quit .cancle').click(function(){
+					$('.pop_up').css('display','none');
+					$('.quit').css('display','none');
+				})
+				$('.quit .affirm').click(function(){
+					$('.pop_up').css('display','none');
+					$('.quit').css('display','none');
+					window.location.pathname = '/jjGame/user/login.html';
+				})
+			})
+		</script>
+	</body>
+
+</html>

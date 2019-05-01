@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<meta content="yes" name="apple-mobile-web-app-capable" />
+		<meta content="black" name="apple-mobile-web-app-status-bar-style" />
+		<meta content="telephone=no" name="format-detection" />
+		<link rel="stylesheet" type="text/css" href="../static/css/weui.min.css" />
+		<link rel="stylesheet" type="text/css" href="../static/css/iconfont.css" />
+		<link rel="stylesheet" type="text/css" href="../static/css/common.css" />
+		<link rel="stylesheet" type="text/css" href="../static/css/login.css"/>
+		<link rel="stylesheet" type="text/css" href="../static/css/style.css" />
+		<link rel="stylesheet" type="text/css" href="../static/css/emoji.css" />
+		<script src="../static/js/jquery.min.js" type="text/javascript"></script>
+		<title>用户注册</title>
+		<style type="text/css">
+			.qu_btn span{
+				border: none !important;
+			}
+		</style>
+	</head>
+	<body class="loginbg">
+		<div class="reg-win">
+			<a href="login.html"><i class="iconfont icon-guanbi2 reg-close"></i></a>
+			<div style="padding: 20px 0 10px 0; text-align: center; font-size:25px;color: #fff">
+				<i class="iconfont" style="font-size: 40px;">&#xe731;</i> 账户注册
+			</div>
+			<div class="login">
+				<div class="login-line">
+					<input type="text" class="text-box rname" name="user" placeholder="填写登陆账户" />
+				</div>
+				<div class="login-line">
+					<input type="password" class="text-box rpwd" name="password" placeholder="填写登陆密码" />
+				</div>
+				<div class="login-line">
+					<input type="password" class="text-box rpwd2" name="password2" placeholder="确定登陆密码" />
+				</div>
+				<div class="login-line">
+					<input type="number" class="text-box rpuid" name="num" style="text-align: left;width: 40%;" value="" placeholder="推荐人编号" /> &nbsp;推荐人编号为5个数字。
+				</div>
+				<a href="javascript:void(0)" class="weui-btn weui-btn_primary xsreg" style="margin-top: 20px;">立即注册</a>
+				<div class="login-btn-group">
+					<a href="login.html" class="reg-close login-hand">返回登陆</a>
+				</div>
+			</div>
+		</div>
+		<div id="sloading" style="display: none;">
+			<div class="weui-mask_transparent"></div>
+			<div class="weui-toast" style="width: 30% !important; left: 45%;">
+				<i class="weui-loading weui-icon_toast"></i>
+				<p class="weui-toast__content">正在登陆中</p>
+			</div>
+		</div>
+		<div class="pop_up">
+			<div class="quit">
+				<div class="qu_title">
+					您的登陆帐号填写不正确
+					<br />
+					帐号必须是英文数字组合
+					<br />
+					首位须是字母，长度5到20
+				</div>
+				<div class="qu_btn">
+					<span class="know">我知道了</span>
+				</div>
+			</div>
+		</div>
+		
+		<script type="text/javascript">
+			$(function(){
+				$('.know').click(function(){
+					$('.pop_up').css('display','none');
+					$('.quit').css('display','none');
+				})
+				$('.xsreg').click(function(){
+					var sReg = /^[a-zA-Z]{1}[a-zA-Z0-9]{4,19}$/,
+//						nReg = /^\w+${6,}/,
+						s = true,
+				 		user = $('input[name="user"]').val(),
+						pwd = $('input[name="password"]').val(),
+						pwd2 = $('input[name="password2"]').val();
+					if(user == '' || sReg.test(user) == false){
+						s = false;
+						$('.pop_up').css('display','block');
+						$('.quit').css('display','block');
+					}else if(pwd.length < 6){
+						s = false;
+						$('.pop_up').css('display','block');
+						$('.quit').css('display','block');
+						$('.qu_title').text('登陆密码必须是6位上！');
+					}else if(pwd2 !== pwd){
+						s = false;
+						$('.pop_up').css('display','block');
+						$('.quit').css('display','block');
+						$('.qu_title').text('两次输入的密码不一致');
+					}
+					
+					if(s){
+						if(0){
+							
+						}else{
+							$('.pop_up').css('display','block');
+							$('.quit').css('display','block');
+							$('.qu_title').text('注册会员成功');
+						}
+					}
+				})
+			})
+		</script>
+	</body>
+</html>
